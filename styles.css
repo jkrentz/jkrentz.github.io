@@ -1,0 +1,298 @@
+/* GENERAL */
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border-top: 4px solid #666;
+	font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1, h2, h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0 auto 10px auto;
+	line-height: 1.8;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #2A6496;
+}
+
+a {
+	text-decoration: none;
+	transition: all .25s;
+	-moz-transition: all .25s;
+	-webkit-transition: all .25s;
+}
+
+.content-inner {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*
+ *	Generic navigation.
+ */
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;;
+	margin-top: 10px;
+}
+
+nav li {
+	padding: 6px;
+}
+
+nav a {
+	color: #555;
+}
+
+nav a {
+	float: left;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 5px;
+	border-radius: 5px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+}
+
+nav .current a {
+	background: #666;
+	color: #f9f9f9;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
+}
+
+/*
+ *	Mobile specific navigation.
+ */
+
+nav ul {
+	width: 100%;
+	display: table;
+}
+
+nav li {
+	display: table-cell;
+	width: 33.3333%;
+	white-space: nowrap;
+}
+
+/*
+ *	Tablet and desktop navigation.
+ */
+
+@media (min-width: 660px) {
+	nav {
+		display: inline-block;
+		margin-top: 22px;
+		text-align: right;
+		float: right;
+	}
+
+	nav a {
+		padding: 0.5em 1em;
+	}
+}
+
+
+/* HEADER */
+
+header {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	background: #f9f9f9;
+	border-bottom: 1px solid #EEE;
+	text-align: center;
+	overflow: hidden;
+}
+
+header h1 {
+	margin-top: 20px;
+	font-size: 2.25em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+}
+
+header h1 a {
+	color: #333;
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
+footer .content-inner {
+	border-top: 1px solid #EEE;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+footer a {
+	color: #333;
+	margin: 0 auto 15px auto;
+	display: inline-block;
+	vertical-align: top;
+	width: 90px;
+	line-height: 20px;
+}
+
+footer a .fa {
+	color: #555;
+	display: block;
+}
+
+footer a small {
+	display: block;
+	margin-top: 10px;
+}
+
+footer a:hover i,
+footer a:hover small,
+footer a:focus i,
+footer a:focus small {
+	color: #2A6496;
+}
+
+/* UTILITY */
+
+.hide-mobile {
+	display: none;
+}
+
+/* RESUME */
+
+.job {
+	margin-top: 30px;
+}
+
+.job-title {
+	display: inline;
+	margin-bottom: 4px;
+	font-weight: 500;
+}
+
+.job-date {
+	display: inline;
+}
+
+.job-employer {
+	display: block;
+}
+
+.job li {
+	padding: 2px 0 2px;
+}
+
+.skills {
+	display: flex;
+  flex-wrap: wrap;
+	list-style: none;
+}
+
+.skills {
+	padding-left: 0;
+}
+
+.skills li {
+	flex: 1 1 170px;
+	align-items: start;
+  box-sizing: border-box;
+	padding: 0 25px 0 25px;
+}
+
+.section-header {
+	margin-top: 40px;
+}
+
+.resume-download {
+	background-color: #f7faff;
+	max-width: 325px;
+	color: #333;
+	text-align: center;
+	display: block;
+	border: 3px solid #777;
+	padding: 20px 0 20px;
+}
+
+.resume-download i {
+	margin-left: 10px;
+	vertical-align: middle;
+	font-size: 2em;
+	color: rgb(238, 15, 16);
+}
+
+.resume-download:active,
+.resume-download:focus,
+.resume-download:hover {
+	border-color: #2A6496;
+}
+
+.skills {
+	display: flex;
+  flex-wrap: wrap;
+	list-style: none;
+}
+
+/* DESKTOP */
+
+@media (min-width: 660px) {
+	body {
+		font-size: 18px;
+	}
+
+	header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	header h1 {
+		text-align: left;
+		float: left;
+	}
+
+	.hide-mobile {
+		display: inline-block;
+	}
+
+	footer a {
+		width: 150px;
+	}
+}
